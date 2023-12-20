@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300&family=Montserrat:wght@100;300&family=Poppins:wght@100;300&display=swap');
+
+@keyframes subir {
+    0% {
+        opacity: 0%;
+        transform: translateY(100px);
+    }
+    100% {
+        opacity: 100%;
+        transform: translateY(0%);
+    }
+}
+* {
+    font-family: Montserrat, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: aliceblue;
+}
+
+nav ul {
+    list-style: none;
+    position: fixed;
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    height: 80px;
+    align-items: center;
+    gap: 2em;
+    margin-left: 50px;
+}
+
+.nav-links {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 400;
+}
+
+body {
+    background-image: url(recursos/Restaurante.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+section{
+    backdrop-filter: contrast(140%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.content {
+    margin: 5vh 5vw;
+}
+
+#logo {
+    width: 250px;
+    filter: contrast(0) brightness(2);
+    margin: 5vh 5vw 0px;
+}
+
+h1 {
+    position: relative;
+    font-size: 50px;
+    margin: 0vh 15vw 0vh;
+    animation-duration: 1s;
+    animation-delay: 0.25s;
+    animation-name: subir;
+    animation-fill-mode: both;
+}
+
+h2 {
+    margin: 0vh 15.2vw 10vh;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-name: subir;
+    animation-fill-mode: both;
+}
+
+#delivery{
+    width: 20vw;
+    height: auto;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    visibility: j;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #333;
+    border-radius: 10px;
+}
